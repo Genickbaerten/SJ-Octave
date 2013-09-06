@@ -1,4 +1,7 @@
+#!/usr/bin/octave
 %SJ
+%Initial version 9/6/13 by CyclicCoder
+
 clear all
 close all
 
@@ -78,7 +81,7 @@ while ~done
         if NumExtra > 0
             %Pick at random
             IndsToDiscard = last(randperm(Ncards(player)),NumExtra);
-            [player_cards{player},discard_deck,] = TakeNCards(player_cards{player},discard_deck,IndsToDiscard);
+            [player_cards{player},discard_deck] = TakeNCards(player_cards{player},discard_deck,IndsToDiscard);
         end
     end
     Nchapel = cellfun(@length,chapel_cards)
