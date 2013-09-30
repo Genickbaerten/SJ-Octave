@@ -10,3 +10,7 @@ Run ./test_SJ.m from the command line
 assumes /usr/bin/octave is present
 
 Currently just a test, not a full fledged program.
+
+Requires additional functions and AI, possibly a
+trained monkey could provide this, so long as it
+works for free.
